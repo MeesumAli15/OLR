@@ -1,0 +1,38 @@
+﻿@model retry.Models.Lecture
+
+
+@{
+    ViewBag.Title = "Lectures";
+}
+
+
+
+    
+<h2>Lectures</h2>
+
+<h1 class="page-title">Lectures</h1>
+<div class="jumbotron">
+    <div class="container">
+
+        <h3>Upload lecture</h3>
+        <p>Add the lectures to help the others.</p>
+
+        <div class="jumbotron">
+            <div class="container">
+
+                <form action="/Lectures/save" method="post" enctype="multipart/form-data">
+                    Upload Lecture:
+                    <input type="file" name="image" />
+
+                    <img src="~/images/lecture.jpg" />
+                    <br />
+
+                    <input type="submit" value="upload"  />
+                </form>
+            </div>
+        </div>
+
+
+
+    </div>
+</div>

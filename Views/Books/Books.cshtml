@@ -1,0 +1,23 @@
+﻿@model List<retry.Models.Book>
+@{
+    ViewBag.Title = "Books";
+}
+@Html.EditorForModel()
+
+
+   <h1 class="page-title">Books</h1>
+<div class="jumbotron top-space">
+
+    <h2>Upload the book.</h2>
+
+    <div class="container">
+        <form action="/Books/save" method="post" enctype="multipart/form-data">
+            Upload Book:
+        <input type="file" name="image" /><img src="~/images/book.jpg" />
+
+            <br />
+
+            <input type="submit" value="upload" />
+        </form>
+    </div>
+</div>
